@@ -6,10 +6,15 @@
       <list>
         <option value="$PROJECT_DIR$/Event-Eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/Event-Config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/Event-Gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/Internaute/pom.xml" />
+        <option value="$PROJECT_DIR$/Internaute-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Evenement_Categorie-Microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Ticket-microservice/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Evenement_Categorie-Microservice
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: Event_Categorie-Service

@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: Event-Config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mariemMoula/Config-Repository.git
+          clone-on-start: true
+          #                    username: ${GIT_USERNAME}
+          #                    password: ${GIT_PASSWORD}
+          search-paths: '{application}'
+    compatibility-verifier:
+      enabled: false

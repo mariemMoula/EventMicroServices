@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Event-Gateway-server
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: Event-Config-server

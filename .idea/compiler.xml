@@ -8,13 +8,38 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Event-Config-server" />
         <module name="Event-Eureka-server" />
+        <module name="Internaute-microservice" />
+        <module name="Event-Gateway-server" />
+      </profile>
+      <profile name="Annotation profile for Evenement_Categorie-Microservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="Evenement_Categorie-Microservice" />
+      </profile>
+      <profile name="Annotation profile for Ticket-microservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="Ticket-microservice" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Evenement_Categorie-Microservice" options="-parameters" />
       <module name="Event-Config-server" options="-parameters" />
       <module name="Event-Eureka-server" options="-parameters" />
+      <module name="Event-Gateway-server" options="-parameters" />
+      <module name="Internaute-microservice" options="-parameters" />
+      <module name="Ticket-microservice" options="-parameters" />
     </option>
   </component>
 </project>
