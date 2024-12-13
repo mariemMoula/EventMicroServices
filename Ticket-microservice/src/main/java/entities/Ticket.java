@@ -20,8 +20,6 @@ public class Ticket {
     private String numeroTicket;
     private LocalDate dateAchat;
 
-    @ManyToOne
-    @JoinColumn(name = "evenement_id")
-    private Evenement evenement;
+    private Integer evenementid;
 
 }

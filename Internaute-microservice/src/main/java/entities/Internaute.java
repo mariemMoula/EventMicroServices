@@ -23,6 +23,6 @@ public class Internaute {
     @Enumerated(EnumType.STRING)
     private TrancheAge trancheAge;
 
-    @OneToMany(mappedBy = "internaute")
-    private List<Ticket> tickets;
+    @ElementCollection
+    private List<Integer> ticketsId;
 }
